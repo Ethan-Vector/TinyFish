@@ -1,0 +1,4 @@
+{"id": "math_1", "input": "19*7", "expected_contains": ["133"]}
+{"id": "note_1", "input": "write note: remember to add retries", "expected_contains": ["ok"]}
+{"id": "read_notes", "input": "read notes", "expected_contains": ["remember to add retries"]}
+{"id": "echo", "input": "Hello there", "expected_contains": ["You said: Hello there"]}

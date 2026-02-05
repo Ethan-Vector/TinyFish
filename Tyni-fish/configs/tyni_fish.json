@@ -1,0 +1,19 @@
+{
+  "provider": "dummy",
+  "policy": {
+    "max_steps": 8,
+    "tool_timeout_secs": 5,
+    "allow_tools": [
+      "calc",
+      "note_append",
+      "read_file",
+      "write_file",
+      "echo"
+    ]
+  },
+  "tracing": {
+    "enabled": true,
+    "trace_dir": "traces"
+  },
+  "workspace_dir": "workspace"
+}

@@ -1,0 +1,13 @@
+services:
+  tyni-fish:
+    build: .
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL}
+      - OPENAI_MODEL=${OPENAI_MODEL}
+      - TYNI_MAX_STEPS=${TYNI_MAX_STEPS:-8}
+      - TYNI_TOOL_TIMEOUT_SECS=${TYNI_TOOL_TIMEOUT_SECS:-5}
+      - TYNI_TRACE_DIR=/app/traces
+    volumes:
+      - ./traces:/app/traces
+      - ./workspace:/app/workspace
